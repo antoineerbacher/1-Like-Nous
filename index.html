@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
 
@@ -15,12 +16,23 @@
 
     <title>Un like, et puis nous.</title>
 
-   <link rel="stylesheet" href="./style.css">
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
 </head>
 
 <body>
 
-    ./un-like-et-puis-nous.mp3</audio>
+    <!-- =========================
+         FICHIER AUDIO
+    ========================== -->
+
+    <audio
+        id="song"
+        src="./Un like, et puis nous.mp3"
+        preload="metadata"
+    ></audio>
 
 
     <!-- =========================
@@ -50,7 +62,11 @@
                 La nôtre a commencé beaucoup plus simplement.
             </p>
 
-            <button id="enterButton" class="enter-button" type="button">
+            <button
+                id="enterButton"
+                class="enter-button"
+                type="button"
+            >
                 Entrer
                 <span aria-hidden="true">→</span>
             </button>
@@ -68,11 +84,18 @@
          PAGE DU PLAYER
     ========================== -->
 
-    <main id="playerPage" class="page player-page hidden">
+    <main
+        id="playerPage"
+        class="page player-page hidden"
+    >
 
         <header class="player-header">
 
-            <button id="backButton" class="back-button" type="button">
+            <button
+                id="backButton"
+                class="back-button"
+                type="button"
+            >
                 ← Retour
             </button>
 
@@ -86,7 +109,9 @@
         <section class="player-layout">
 
 
-            <!-- TEXTE -->
+            <!-- =========================
+                 TEXTE
+            ========================== -->
 
             <div class="story">
 
@@ -102,7 +127,6 @@
                 <div class="separator"></div>
 
                 <p class="quote">
-
                     Pas besoin d'une grande phrase
                     pour expliquer pourquoi.
 
@@ -110,13 +134,14 @@
                         Ma plus belle évidence aujourd'hui,
                         Audrey… c'est toi.
                     </strong>
-
                 </p>
 
             </div>
 
 
-            <!-- PLAYER -->
+            <!-- =========================
+                 PLAYER
+            ========================== -->
 
             <div class="player-card">
 
@@ -134,14 +159,19 @@
 
                     </div>
 
-                    <div class="player-heart" aria-hidden="true">
+                    <div
+                        class="player-heart"
+                        aria-hidden="true"
+                    >
                         ♥
                     </div>
 
                 </div>
 
 
-                <!-- ANIMATION AUDIO -->
+                <!-- =========================
+                     ANIMATION AUDIO
+                ========================== -->
 
                 <div
                     id="visualizer"
@@ -150,7 +180,9 @@
                 ></div>
 
 
-                <!-- PROGRESSION -->
+                <!-- =========================
+                     PROGRESSION
+                ========================== -->
 
                 <input
                     id="progressBar"
@@ -177,7 +209,9 @@
                 </div>
 
 
-                <!-- COMMANDES -->
+                <!-- =========================
+                     COMMANDES
+                ========================== -->
 
                 <div class="controls">
 
@@ -224,6 +258,10 @@
                 </div>
 
 
+                <!-- =========================
+                     ERREUR AUDIO
+                ========================== -->
+
                 <p
                     id="audioError"
                     class="audio-error hidden"
@@ -235,6 +273,10 @@
 
         </section>
 
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
 
         <footer>
 
@@ -251,7 +293,11 @@
     </main>
 
 
-     <script src="./script.js"> </script >
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="./script.js"></script>
 
 </body>
 </html>

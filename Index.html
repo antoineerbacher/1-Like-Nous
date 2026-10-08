@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#090807"
+    >
+
+    <title>Un like, et puis nous.</title>
+
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    ./un-like-et-puis-nous.mp3</audio>
+
+
+    <!-- =========================
+         PAGE D'ENTRÉE
+    ========================== -->
+
+    <main id="entryPage" class="page entry-page">
+
+        <div class="date">
+            03.07.2026
+        </div>
+
+        <div class="entry-content">
+
+            <p class="eyebrow">
+                Pour Audrey
+            </p>
+
+            <h1>
+                Un like.
+                <span>Et puis nous.</span>
+            </h1>
+
+            <p class="intro-text">
+                Certaines histoires commencent par de grandes déclarations.
+                <br>
+                La nôtre a commencé beaucoup plus simplement.
+            </p>
+
+            <button id="enterButton" class="enter-button" type="button">
+                Entrer
+                <span aria-hidden="true">→</span>
+            </button>
+
+        </div>
+
+        <div class="signature">
+            ANTOINE · AUDREY
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         PAGE DU PLAYER
+    ========================== -->
+
+    <main id="playerPage" class="page player-page hidden">
+
+        <header class="player-header">
+
+            <button id="backButton" class="back-button" type="button">
+                ← Retour
+            </button>
+
+            <div class="heart" aria-hidden="true">
+                ♡
+            </div>
+
+        </header>
+
+
+        <section class="player-layout">
+
+
+            <!-- TEXTE -->
+
+            <div class="story">
+
+                <p class="chapter">
+                    03 JUILLET 2026 · CHAPITRE MUSICAL
+                </p>
+
+                <h2>
+                    Un like,
+                    <span>et puis nous.</span>
+                </h2>
+
+                <div class="separator"></div>
+
+                <p class="quote">
+
+                    Pas besoin d'une grande phrase
+                    pour expliquer pourquoi.
+
+                    <strong>
+                        Ma plus belle évidence aujourd'hui,
+                        Audrey… c'est toi.
+                    </strong>
+
+                </p>
+
+            </div>
+
+
+            <!-- PLAYER -->
+
+            <div class="player-card">
+
+                <div class="player-card-header">
+
+                    <div>
+
+                        <p class="player-label">
+                            ♪ &nbsp; UNE CHANSON POUR TOI
+                        </p>
+
+                        <p class="audrey-name">
+                            Audrey
+                        </p>
+
+                    </div>
+
+                    <div class="player-heart" aria-hidden="true">
+                        ♥
+                    </div>
+
+                </div>
+
+
+                <!-- ANIMATION AUDIO -->
+
+                <div
+                    id="visualizer"
+                    class="visualizer"
+                    aria-hidden="true"
+                ></div>
+
+
+                <!-- PROGRESSION -->
+
+                <input
+                    id="progressBar"
+                    class="progress-bar"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    aria-label="Progression de la chanson"
+                >
+
+
+                <div class="time-row">
+
+                    <span id="currentTime">
+                        0:00
+                    </span>
+
+                    <span id="duration">
+                        0:00
+                    </span>
+
+                </div>
+
+
+                <!-- COMMANDES -->
+
+                <div class="controls">
+
+                    <button
+                        id="restartButton"
+                        class="secondary-control"
+                        type="button"
+                        aria-label="Recommencer"
+                    >
+                        ↻
+                    </button>
+
+
+                    <button
+                        id="playButton"
+                        class="play-button"
+                        type="button"
+                        aria-label="Lire la chanson"
+                    >
+                        <span id="playIcon">
+                            ▶
+                        </span>
+                    </button>
+
+
+                    <div class="volume-control">
+
+                        <span aria-hidden="true">
+                            ♫
+                        </span>
+
+                        <input
+                            id="volumeSlider"
+                            type="range"
+                            min="0"
+                            max="1"
+                            step="0.05"
+                            value="0.82"
+                            aria-label="Volume"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <p
+                    id="audioError"
+                    class="audio-error hidden"
+                >
+                    Impossible de charger la chanson.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <span>
+                UN LIKE. UNE HISTOIRE.
+            </span>
+
+            <span>
+                2026
+            </span>
+
+        </footer>
+
+    </main>
+
+
+     <script src="./script.js"> </script >
+
+</body>
+</html>
